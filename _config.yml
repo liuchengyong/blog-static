@@ -28,7 +28,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
@@ -44,7 +44,7 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: 
 category_map: 
 tag_map: 
 
@@ -74,4 +74,11 @@ deploy:
   branch: master
   name: liuchengyong
   email: 980527632@qq.com
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
 
